@@ -1,0 +1,24 @@
+package com.example.springboot_demo.controller;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/shop")
+public class ShopController {
+
+    @GetMapping("/add")
+    public String add() {
+        System.out.println("购物");
+        return "购物";
+    }
+
+    @GetMapping("/delete")
+    public String delete() {
+        System.out.println("删除");
+        return "删除";
+    }
+
+}
